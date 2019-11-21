@@ -1,0 +1,26 @@
+{
+  "name": "slack-status-changer",
+  "version": "1.0.0",
+  "description": "Update slack status from command line",
+  "main": "index.js",
+  "scripts": {
+    "lunch": "node ./index.js lunch",
+    "afk": "node ./index.js afk -t 15",
+    "brb": "node ./index.js afk -t 15",
+    "run": "node ./index.js run",
+    "off": "node ./index.js off",
+    "meeting": "node ./index.js meeting",
+    "clear": "node ./index.js clear",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tarryn S",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "date-fns": "^2.6.0",
+    "meow": "^5.0.0",
+    "minimist": "^1.2.0",
+    "querystring": "^0.2.0"
+  }
+}
